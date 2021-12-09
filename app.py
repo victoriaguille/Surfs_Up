@@ -29,8 +29,17 @@ app = Flask(__name__)
 
 #create first flask route
 @app.route("/")
-def hello_world():
-    return "Hello World"
+def welcome():
+    return (
+    '''
+    Welcome to the Climate Analysis API!
+    Available Routes:
+    /api/v1.0/precipitation
+    /api/v1.0/stations
+    /api/v1.0/tobs
+    /api/v1.0/temp/start/end
+    ''')
+    
 # 6. Define main behavior
 if __name__ == "__main__":
     app.run(debug=True)
