@@ -39,7 +39,7 @@ def welcome():
     /api/v1.0/tobs
     /api/v1.0/temp/start/end
     ''')
-    
+
 # 6. Define main behavior
 if __name__ == "__main__":
     app.run(debug=True)
