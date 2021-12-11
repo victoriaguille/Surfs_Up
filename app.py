@@ -1,14 +1,13 @@
-
-
 #import the dependency
-from flask import Flask, jsonify 
 import datetime as dt
-import numpy as np 
-import pandas as pd 
-import sqlalchemy 
-from sqlalchemy.ext.automap import automap_base 
-from sqlalchemy.orm import Session 
-from sqlalchemy import create_engine, func 
+
+import numpy as np
+import pandas as pd
+import sqlalchemy
+from flask import Flask, jsonify
+from sqlalchemy import create_engine, func
+from sqlalchemy.ext.automap import automap_base
+from sqlalchemy.orm import Session
 
 #set up database engine
 engine = create_engine("sqlite:///hawaii.sqlite")
@@ -40,6 +39,15 @@ def welcome():
     /api/v1.0/temp/start/end
     ''')
 
+#create second route
+@app.route("/api/v1.0/precipitation")
+def precipitation():
+    prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
+    precipitation = session.query(Measurement.date, Measurement.prcp).\
+        filter(Measurement.date >= prev_year).all()
+    precip = {date: prcp for date, prcp in precipitation}
+    return jsonify(precip)
+    
 # 6. Define main behavior
 if __name__ == "__main__":
     app.run(debug=True)
