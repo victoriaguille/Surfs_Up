@@ -12,6 +12,8 @@ Below are the results from the two queries:
 * December has about 200 less data points than the month of June, meaning the two months do not have the same amount of data to pull from.
 * The minimum temperature in December is 56 degrees, which is eight degrees lower than the minimum temperatures in June. 
 * Both months share a rough standard deviation of roughly 3, meaning the data falls within a normal, reliable distribution.  
+####
+![June_Temps_Stats](https://github.com/victoriaguille/Surfs_Up/blob/main/Resources/June%20Temps%20Stats.PNG) ![December_Temps_Stats](https://github.com/victoriaguille/Surfs_Up/blob/main/Resources/December%20Temps%20Stats.PNG)
 
 ## Summary
 ####
