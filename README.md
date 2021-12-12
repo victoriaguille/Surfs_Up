@@ -15,4 +15,6 @@ Below are the results from the two queries:
 
 ## Summary
 ####
-should look at precipitation query
+The statistical analysis performed on the months of June and December are an important evaluation of whether the ice cream and surf shop would be feasible. Knowing the temperature during the hottest month and coldest month can give any potential investors on whether or not people would be interested in surfing or eating ice cream on the beach year round. Hawaii is known for its tropical climate, however, most tourist locations have a peek season and slow season. Looking purely at the temperature, there isn't a significant difference in the average monthly temperature, meaning that there is potential for success. However, just looking at temperature ignores other important factors such as weather conditions that may be best for surfing. Knowing more about the rainfall in December and June could prove that even if the temperature is warm enough, it may not be perfect ice cream or surfing weather. A query performed for the months of June and December with the precipitation selected instead of the temperature in the Measurement table would easily show whether or not excessive raining will be a problem. 
+
+####
